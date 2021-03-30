@@ -38,7 +38,7 @@ class ExecutionPoolMonitored(ExecutionPoolWrap):
             futures: Tuple[Future, ...] = self._pool.futures()
             active: List[Future] = [f for f in futures if not f.done()]
             self._logger.info(
-                f"%s active tasks count: %s. Tasks: %s",
+                "%s active tasks count: %s. Tasks: %s",
                 (
                     type(self).__name__,
                     len(active),
@@ -46,7 +46,7 @@ class ExecutionPoolMonitored(ExecutionPoolWrap):
                 ),
             )
             self._logger.debug(
-                f"%s all tasks count (including tasks waiting to be flushed): %s. All tasks: %s",
+                "%s all tasks count (including tasks waiting to be flushed): %s. All tasks: %s",
                 (
                     type(self).__name__,
                     len(futures),
