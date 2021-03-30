@@ -1,5 +1,5 @@
 import asyncio
-from unittest.mock import Mock, seal, call
+from unittest.mock import Mock, call
 
 import pytest
 
@@ -11,6 +11,7 @@ from test.helpers import (
     assert_all_jobs_not_done,
     unlock_all,
     assert_all_jobs_done,
+    seal,
 )
 
 

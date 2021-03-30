@@ -39,3 +39,11 @@ class OneTimeJob:
 
     def unlock(self):
         self._lock.release()
+
+
+try:
+    from unittest.mock import seal
+except ImportError:
+
+    def seal(obj):
+        pass
