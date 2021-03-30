@@ -8,6 +8,7 @@ install:
   - poetry install
 script:
   - black --check -v expool/ test/
+  - flake8 --ignore E501,W503 expool/ test/ --exclude expool/__init__.py
   - mypy .
   - pytest --cov expool/ --cov-report xml
 after_success:
