@@ -26,7 +26,7 @@ You may also set a timeout for `.close()` method:
 ```python
     await pool.close(timeout=10)  
 ```
-If the timeout is set, `ExecutionPoolSimple` cancels all remaining coroutines and returns.
+If the timeout is reached, `ExecutionPoolSimple` cancels all remaining coroutines and returns.
 
 You may also want to check out `ExecutionPool` decorators:
 - `ExecutionPoolMonitored` - a pool with periodical logging of the jobs inside the pool;
