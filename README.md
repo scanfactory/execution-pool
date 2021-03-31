@@ -34,7 +34,7 @@ You may also want to check out `ExecutionPool` decorators:
 - `ExecutionPoolMonitored` - a pool with periodical logging of the jobs inside the pool;
 - `ExecutionPoolCapped` - a pool with a limited lifespan.
 
-Installation
+## Installation
 ```shell
 pip install expool
 ```
