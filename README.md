@@ -1,5 +1,7 @@
 # Expool
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
+[![Build Status](https://travis-ci.com/scanfactory/execution-pool.svg?branch=master)](https://travis-ci.com/scanfactory/execution-pool)
+[![codecov](https://codecov.io/gh/scanfactory/execution-pool/branch/master/graph/badge.svg)](https://app.codecov.io/gh/scanfactory/execution-pool)
 
 Simple asynchronous execution pool primitive.
 You can think of it as of a `threading.ThreadPool` for coroutines.
