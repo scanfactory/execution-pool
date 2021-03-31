@@ -1,4 +1,5 @@
 import asyncio
+from typing import Any
 
 
 def assert_all_jobs_done(jobs):
@@ -45,5 +46,5 @@ try:
     from unittest.mock import seal
 except ImportError:
 
-    def seal(obj):
+    def seal(mock) -> None:
         pass
