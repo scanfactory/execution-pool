@@ -42,7 +42,7 @@ class OneTimeJob:
 
 
 try:
-    from unittest.mock import seal
+    from unittest.mock import seal  # type: ignore
 except ImportError:
 
     def seal(mock) -> None:
