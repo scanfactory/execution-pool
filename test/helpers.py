@@ -1,5 +1,4 @@
 import asyncio
-from typing import Any
 
 
 def assert_all_jobs_done(jobs):
