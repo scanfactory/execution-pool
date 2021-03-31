@@ -31,7 +31,7 @@ class ExecutionPoolMonitored(ExecutionPoolWrap):
 
     def start_monitoring(self):
         if self._monitoring_task is None:
-            self._monitoring_task = asyncio.create_task(self._monitor())
+            self._monitoring_task = asyncio.ensure_future(self._monitor())
 
     async def _monitor(self):
         while True:
