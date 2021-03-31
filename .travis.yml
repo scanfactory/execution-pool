@@ -13,4 +13,4 @@ script:
   - pytest --cov expool/ --cov-report xml
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-
+ - bash ./publish.sh
