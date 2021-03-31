@@ -28,7 +28,7 @@ class ExecutionPoolSimple(ExecutionPoolOpen):
             self._add(job)
 
     def _add(self, job: Callable[[], Awaitable[None]]):
-        self._tasks.add(asyncio.create_task(job()))
+        self._tasks.add(asyncio.ensure_future(job()))
 
     async def close(self, timeout=None):
         try:
