@@ -23,7 +23,6 @@ class ExecutionPoolSimple(ExecutionPoolOpen):
             done, pending = await asyncio.wait(
                 self._tasks, return_when=asyncio.FIRST_COMPLETED
             )
-            print(done, pending)
             self._tasks = pending
             self._add(job)
 
