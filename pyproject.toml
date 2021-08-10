@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "expool"
-version = "0.1.0"
+version = "0.1.1"
 description = "Simple asynchronous execution pool primitive for Python 3.6+"
 authors = ["monomonedula <valh@tuta.io>"]
 license = "MIT"
